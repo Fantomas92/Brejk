@@ -7,10 +7,10 @@
     $stats = dibi::query('
      select p.*, s.`tp`, s.`rp`
      from `player_update` p
-     left join `stadium_update` s using(`update`)
+     left join `stadium_update` s on (s.`update` = p.`update` and s.`id_team` = %i)
      where p.`id_player` = %i
      order by p.`id_player_update` desc
-     limit 60', $_GET['s'])->fetchAll();
+     limit 60', $team->id_team, $_GET['s'])->fetchAll();
     ?>
     <div class="content level_three">
      <p>
