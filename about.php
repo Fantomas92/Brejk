@@ -6,7 +6,7 @@
   Byl vylepšen způsob ukládání dat, aplikace by měla zvládnout utáhnout až <del>300 týmů</del>, oprava, asi tak 100, budu to muset ještě zlepšit. Nejlepší by bylo koupit vlastní hosting, tady mám jen 100 MB.<br>
   Bylo přidáno <span class="green">stažení ligových zápasů daného týmu</span>. Ale ještě to <span class="red">není hezké</span>.<br>
   Přidáno <span class="green">zobrazení změny koeficientu a přízně fanoušků</span>.<br>
-  Přidáno <span class="green">načítání TP a RP u stadionu</span>, úrovně se zobrazuzí i u detailu hráče.
+  Přidáno <span class="green">načítání TP a RP u stadionu</span>, úrovně se zobrazí i u detailu hráče.
  </p>
  <p>
   Aplikace byla spuštěna dne <em>20. srpna 2012</em>.<br>
