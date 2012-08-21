@@ -14,6 +14,10 @@
    <td id="leaque-matches" class="status red"></td>
   </tr>
   <tr>
+   <td>Načítám stadion &hellip;</td>
+   <td id="stadium" class="status red"></td>
+  </tr>
+  <tr>
    <td>Třídím data &hellip;</td>
    <td id="sorting-data" class="status red"></td>
   </tr>

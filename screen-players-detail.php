@@ -5,10 +5,11 @@
      where `id_player` = %i
      limit 1', $_GET['s'])->fetch();
     $stats = dibi::query('
-     select *
-     from `player_update`
-     where `id_player` = %i
-     order by `id_player_update` desc
+     select p.*, s.`tp`, s.`rp`
+     from `player_update` p
+     left join `stadium_update` s using(`update`)
+     where p.`id_player` = %i
+     order by p.`id_player_update` desc
      limit 60', $_GET['s'])->fetchAll();
     ?>
     <div class="content level_three">
@@ -36,6 +37,8 @@
       <thead>
        <tr>
         <td>Věk</td>
+        <td>TP</td>
+        <td>RP</td>
         <td>G</td>
         <td>O</td>
         <td>U</td>
@@ -84,6 +87,8 @@
        ?>
        <tr>
         <td class="difference<?php echo $difference[0]; ?>"><?php echo $stats[$i]->age; ?></td>
+        <td><?php echo $stats[$i]->tp; ?></td>
+        <td><?php echo $stats[$i]->rp; ?></td>
         <td class="difference<?php echo $difference[1]; ?>"><?php echo $stats[$i]->g; ?></td>
         <td class="difference<?php echo $difference[2]; ?>"><?php echo $stats[$i]->o; ?></td>
         <td class="difference<?php echo $difference[3]; ?>"><?php echo $stats[$i]->u; ?></td>

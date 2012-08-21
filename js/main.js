@@ -57,6 +57,17 @@ function loadMatches(id_team) {
   data: { id_team: id_team }
  }).success(function(data) {
   $('#leaque-matches').removeClass('yellow').addClass('green');
+  $('#stadium').removeClass('red').addClass('yellow');
+  loadStadium(id_team);
+ });
+}
+
+function loadStadium(id_team) {
+ $.ajax({
+  url: 'crawler/loadStadium.php',
+  data: { id_team: id_team }
+ }).success(function(data) {
+  $('#stadium').removeClass('yellow').addClass('green');
   $('#sorting-data').removeClass('red').addClass('yellow');
   sortData(id_team);
  });
