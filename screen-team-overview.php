@@ -38,7 +38,7 @@
      <p>
       Stadion<br>
       <strong><?php echo $team_d->stadium .' ('. $team_d->stadium_capacity .')'; ?></strong>
-      <small>(Zde bude odkaz na stadion)</small>
+      (<a href="screen.php?id_team=<?php echo $team->id_team; ?>&p=team&s=stadium">Zobrazit</a>)
      </p>
      <p>
       Na Brejku od<br>
