@@ -1,5 +1,9 @@
 <div class="content level_two">
  <h1>O aplikaci Brejk-Stats</h1>
+ <p>
+  Pokud chcete využívat aplikaci Brejk-Stats na vlastní počítači, je možnost stáhnout zdrojový kód na GitHubu (<a href="https://github.com/Goues/Brejk/" target="_blank">Odkaz</a>) a nainstalovat. V takovém případě máte zaručeno nesdílení dat o svém účtu s ostatními hráči, na který mnoho manažerů poukazuje. Zároveň výrazně snížíte zátěž této databáze.<br>
+  Stejně tak můžete přes GitHub přispět k vývoji aplikace! :)
+ </p>
  <h2>Novinky</h2>
  <p>
   21. srpna<br>
