@@ -112,8 +112,7 @@ for($index = 1; $index < $tr->length; $index++) {
 
  if( $count == 0 ) {
   dibi::query('insert into `player`', array(
-   'id_player' => $id_player,
-   'id_team' => $id_team,
+   'id_player' => $id_player
    'name' => $name,
    'country' => $flag,
    'position' => $position
