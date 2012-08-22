@@ -29,7 +29,7 @@ $dom->loadHTML( $content );
 
 $tr = $dom->getElementsByTagName('table')->item(1)->getElementsByTagName('tr');
 
-for( $i = 1; $i < 3; $i++ ) {
+for( $i = 1; $i < 9; $i++ ) {
  $string = $dom->saveHTML($tr->item($i)->getElementsByTagName('td')->item(1));
  $level[$i] = substr_count(htmlspecialchars($string), '_aktiv');
 }
@@ -39,6 +39,12 @@ dibi::query('insert into `stadium_update`', array(
  'id_team' => $id_team,
  'tp' => $level[1],
  'rp' => $level[2],
+ 'mo' => $level[3],
+ 'pd' => $level[4],
+ 'ssv' => $level[5],
+ 'os' => $level[6],
+ 'vo' => $level[7],
+ 'khp' => $level[8]
 ));
 
 echo 1;

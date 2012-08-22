@@ -191,6 +191,11 @@ nav ul a.active:after {
 .stadium-level .level-9 { width: 180px; }
 .stadium-level .level-10 { border-radius: 8px; width: 200px; }
 
+.stadium-level .level-5.level-max-5,
+.stadium-level .level-3.level-max-3,
+.stadium-level .level-2.level-max-2,
+.stadium-level .level-1.level-max-1 { border-radius: 8px; }
+
 /* Difference */
 
 .difference0 {  }
