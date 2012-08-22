@@ -11,8 +11,8 @@
      puy.`kv` as ykv, puy.`z` as yz, puy.`ea` as yea, puy.`ec` as yec
      from `player` as p
      join `player_update` as pu using (`id_player`)
-     LEFT JOIN  `player_update` AS puy ON (puy.`id_player` = p.`id_player` and puy.`update` = %t)
-     where p.`id_team` = %i and pu.`update` = %t
+     left join  `player_update` AS puy on (puy.`id_player` = p.`id_player` and puy.`update` = %t)
+     where pu.`id_team` = %i and pu.`update` = %t
      order by p.`name` asc', lastConversion() - 60*60*24, $team->id_team, lastConversion())->fetchAll();
     ?>
     <div class="content level_three">

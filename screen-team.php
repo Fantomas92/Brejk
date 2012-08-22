@@ -9,9 +9,6 @@
      <li>
       <a href="screen.php?id_team=<?php echo $team->id_team; ?>&p=team&s=matches" <?php if(isset($_GET['s']) && $_GET['s'] == 'matches') echo 'class="active"'; ?>>Ligové zápasy</a>
      </li>
-     <li>
-      <a href="screen.php?id_team=<?php echo $team->id_team; ?>&p=team&s=stadium" <?php if(isset($_GET['s']) && $_GET['s'] == 'stadium') echo 'class="active"'; ?>>Stadion</a>
-     </li>
     </ul>
    </nav>
    <?php
@@ -19,7 +16,5 @@
     include 'screen-team-overview.php';
    } elseif(isset($_GET['s']) && $_GET['s'] == 'matches') {
     include 'screen-team-matches.php';
-   } elseif(isset($_GET['s']) && $_GET['s'] == 'stadium') {
-    include 'screen-team-stadium.php';
    }
    ?>

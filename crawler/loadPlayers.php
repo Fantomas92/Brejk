@@ -106,6 +106,8 @@ for($index = 1; $index < $tr->length; $index++) {
   continue;
  }
 
+ $skill['id_team'] = $id_team;
+
  $count = dibi::query('select count(`id_player`) from `player` where `id_player` = %i', $id_player)->fetchSingle();
 
  if( $count == 0 ) {
@@ -127,6 +129,8 @@ for($index = 1; $index < $tr->length; $index++) {
   $skill['id_player'] = $id_player;
   dibi::query('insert into `player_update`', $skill);
  }
+
+ unset($skill);
 
 }
 

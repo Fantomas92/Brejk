@@ -43,6 +43,9 @@ if(!isset($_GET['id_team'])) {
      <li>
       <a href="screen.php?id_team=<?php echo $team->id_team; ?>&p=players" <?php if(isset($_GET['p']) && $_GET['p'] == 'players') echo 'class="active"'; ?>>Hráči</a>
      </li>
+     <li>
+      <a href="screen.php?id_team=<?php echo $team->id_team; ?>&p=stadium" <?php if(isset($_GET['p']) && $_GET['p'] == 'stadium') echo 'class="active"'; ?>>Stadion</a>
+     </li>
     </ul>
    </nav>
    <?php
@@ -50,6 +53,8 @@ if(!isset($_GET['id_team'])) {
     include 'screen-team.php';
    } else if(isset($_GET['p']) && $_GET['p'] == 'players') {
     include 'screen-players.php';
+   } else if(isset($_GET['p']) && $_GET['p'] == 'stadium') {
+    include 'screen-stadium.php';
    } else {
     include 'about.php';
    }

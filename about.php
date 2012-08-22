@@ -10,7 +10,7 @@
  </p>
  <p>
   Aplikace byla spuštěna dne <em>20. srpna 2012</em>.<br>
-  Administrátorem Brejk-Stats je manažer <a href="http://www.brejk.cz/index.php?p=info_tym&tym=63171" target="_blank">Goues (XYZ White Tiger)</a>.<br>
+  Administrátorem Brejk-Stats je manažer <a href="http://www.brejk.cz/index.php?p=info_tym&tym=63171" target="_blank">Goues (XYZ White Tigers)</a>.<br>
   Veškeré dotazy, připomínky, doporučení, žádosti či oznámení chyb posílejte poštou na Brejku či na email goues.cz@googlemail.com.
  </p>
  <h2>Co už umí</h2>
@@ -26,6 +26,7 @@
  <h2>Oznámení</h2>
  <p>
   Pokud chcete využívat aplikaci Brejk-Stats na vlastní počítači, je možnost stáhnout zdrojový kód na GitHubu (<a href="https://github.com/Goues/Brejk/" target="_blank">Odkaz</a>) a nainstalovat. V takovém případě máte zaručeno nesdílení dat o svém účtu s ostatními hráči, na který mnoho manažerů poukazuje. Zároveň výrazně snížíte zátěž této databáze.<br>
-  Stejně tak můžete přes GitHub přispět k vývoji aplikace! :)
+  Stejně tak můžete přes GitHub přispět k vývoji aplikace! :)<br>
+  <strong>Je k tomu však potřeba mít fungující Apache s PHP a MySQL a alespoň trochu vědět, jak s tím zacházet</strong>.
  </p>
 </div>

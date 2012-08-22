@@ -1,9 +1,10 @@
    <?php
    $players = dibi::query('
-    select `name`, `id_player`
-    from `player`
-    where `id_team` = %i
-    order by `name` asc', $team->id_team)->fetchAll();
+    select p.`name`, p.`id_player`
+    from `player_update` pu
+    join `player` p using(`id_player`)
+    where pu.`id_team` = %i and pu.`update` = %d
+    order by p.`name` asc', $team->id_team, lastConversion())->fetchAll();
    ?>
    <nav class="second_level">
     <ul>
